@@ -516,7 +516,7 @@ body {
 }
 .Great_Resourse_content {
     color: black;
-    max-width: 500px;
+    width: 500px;
 }
 
 .Great_Resourse_upTitle {
@@ -942,8 +942,6 @@ body {
 
 }
 @media (max-width: 600px){
-    .Great_Resourse_img img{width: 100%}
-
     .burger_menu {display: flex;}
     .link_block {display: none;}
 
@@ -1010,11 +1008,6 @@ body {
     .swiper-custom-button-prev img, .swiper-custom-button-next img {
         padding: 0 10px;
     }
-
-    .Subscribe_block {
-        padding: 40px;
-    }
-
 }
 
 
