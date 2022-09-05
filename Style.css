@@ -1036,7 +1036,16 @@ body {
     }
     .Other_Services_icon{left: -25%}
 
-    .Author_text{font-size: 14px; text-align: left}
+    .Author_block {padding: 15px 30px 0;}
+    .Author_text{
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .swiper_block {
+        width: 95%;
+        margin: 0 auto;
+    }
     .swiper-custom-button-prev, .swiper-custom-button-next{
         font-size: 14px;
     }
