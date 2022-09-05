@@ -1021,6 +1021,12 @@ body {
 
 @media (max-width: 420px) {
 
+    .R_text {
+        font-size: 26px;
+    }
+
+    .Intro_title {font-size: 42px}
+
     .Services_content {
         margin: 70px 0;
         align-content: end;
@@ -1051,10 +1057,21 @@ body {
     }
     .swiper-custom-button-next {right: 20%;}
 
-    .Pricing_block {padding: 50px 60px}
+    .Pricing_block {padding: 35px 45px}
+    .Pricing_block:hover {padding: 35px 45px}
+    .Price_name_block {padding: 30px 25px}
+    .Price {font-size: 82px}
+    .Price_info {
+        font-size: 22px;
+        line-height: 1.6;
+    }
+
+    .Subscribe_block {
+        padding: 35px;
+        width: 230px;
+    }
+    .Subscribe_input {padding: 10px 0}
+    .Subscribe_input_user {padding: 15px 35px;}
+
     .footer_text {font-size: 10px}
-
 }
-
-
-
