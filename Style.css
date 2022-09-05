@@ -516,7 +516,7 @@ body {
 }
 .Great_Resourse_content {
     color: black;
-    width: 500px;
+    max-width: 500px;
 }
 
 .Great_Resourse_upTitle {
@@ -942,6 +942,8 @@ body {
 
 }
 @media (max-width: 600px){
+    .Great_Resourse_img img{width: 100%}
+
     .burger_menu {display: flex;}
     .link_block {display: none;}
 
@@ -1008,9 +1010,42 @@ body {
     .swiper-custom-button-prev img, .swiper-custom-button-next img {
         padding: 0 10px;
     }
+
+    .Subscribe_block {
+        padding: 40px;
+        width: 260px;
+    }
+    .Subscribe_input_user {padding: 20px 35px;}
+
 }
 
+@media (max-width: 420px) {
 
+    .Services_content {
+        margin: 70px 0;
+        align-content: end;
+    }
+
+    .Other_Services_block {
+        flex-direction: column;
+        margin: 0;
+    }
+    .Other_Services_content {
+        width: 60%;
+        margin: 30px 75px;
+    }
+    .Other_Services_icon{left: -25%}
+
+    .Author_text{font-size: 14px; text-align: left}
+    .swiper-custom-button-prev, .swiper-custom-button-next{
+        font-size: 14px;
+    }
+    .swiper-custom-button-next {right: 20%;}
+
+    .Pricing_block {padding: 50px 60px}
+    .footer_text {font-size: 10px}
+
+}
 
 
 
