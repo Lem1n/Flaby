@@ -1075,6 +1075,8 @@ body {
     .R_text {font-size: 32px;}
     .R_text:after {width: 100px;}
 
+    .Other_Services_content{width: 20%}
+
     .Services_block {display: block}
     .Services_Title {font-size: 30px;}
 

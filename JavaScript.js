@@ -70,14 +70,15 @@ const swiper = new Swiper('.swiper', {
 
 let PopUp = document.querySelector('.pop_up')
 let PopUpX = document.querySelector('.pop_up_close')
-let Login = document.querySelector(".login")
+let Login = document.querySelectorAll(".login")
 
 
-Login.addEventListener("click", function(e) {
-    e.preventDefault()
-    PopUp.style.display = "block"
+Login.forEach(function (Login){
+    Login.addEventListener("click", function(e) {
+        e.preventDefault()
+        PopUp.style.display = "block"
+    })
 })
-
 PopUpX.addEventListener("click", function() {
     PopUp.style.display = "none"
     PopUpBlock.classList.remove("Register")
@@ -118,46 +119,56 @@ RegArrow.addEventListener("click", function() {
 
 //scroll
 
-let Home = document.querySelector('.Home')
-let Services = document.querySelector('.Services_l')
-let Portfolio = document.querySelector('.Portfolio')
-let Blog = document.querySelector('.Blog')
-let Contact = document.querySelector('.Contact')
+let Home = document.querySelectorAll('.Home')
+let Services = document.querySelectorAll('.Services_l')
+let Portfolio = document.querySelectorAll('.Portfolio')
+let Blog = document.querySelectorAll('.Blog')
+let Contact = document.querySelectorAll('.Contact')
 
 
-Home.onclick = function () {
-    scroll ({
-        top: 0,
-        behavior: 'smooth'
+Home.forEach( function (Home){
+    Home.addEventListener("click", function () {
+        scroll ({
+            top: 0,
+            behavior: 'smooth'
+        })
     })
-};
-Services.onclick = function () {
-    scroll ({
-        top: 964,
-        behavior: 'smooth'
+});
+Services.forEach( function (Services){
+    Services.addEventListener("click", function () {
+        scroll ({
+            top: 964,
+            behavior: 'smooth'
+        })
     })
-};
+});
 
-Portfolio.onclick = function () {
-    scroll ({
-        top: 3114,
-        behavior: 'smooth'
+Portfolio.forEach( function (Portfolio){
+    Portfolio.addEventListener("click", function () {
+        scroll ({
+            top: 3114,
+            behavior: 'smooth'
+        })
     })
-};
+});
 
-Blog.onclick = function () {
-    scroll ({
-        top: 3697,
-        behavior: 'smooth'
+Blog.forEach ( function (Blog) {
+    Blog.addEventListener("click", function () {
+        scroll({
+            top: 3697,
+            behavior: 'smooth'
+        })
     })
-};
+});
 
-Contact.onclick = function () {
-    scroll ({
-        top: 5430,
-        behavior: 'smooth'
+Contact.forEach( function (Contact){
+    Contact.addEventListener("click", function () {
+        scroll ({
+            top: 5430,
+            behavior: 'smooth'
+        })
     })
-};
+});
 
 //fixed header
 
@@ -176,7 +187,7 @@ window.addEventListener("scroll", function () {
         BurgerMenu.classList.remove('active');
         Burger_PopUp.classList.remove('active')
     }
-},);
+});
 
 //Burger menu
 
@@ -188,8 +199,8 @@ Burger.onclick = ( function () {
 
 const links = document.querySelectorAll(".link")
 
-links.forEach(function (sss){
-    sss.addEventListener("click",closeMenu)
+links.forEach(function (link){
+    link.addEventListener("click",closeMenu)
 });
 
 
