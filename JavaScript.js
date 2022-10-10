@@ -146,7 +146,7 @@ Services.forEach( function (Services){
 Portfolio.forEach( function (Portfolio){
     Portfolio.addEventListener("click", function () {
         scroll ({
-            top: 3114,
+            top: 3414,
             behavior: 'smooth'
         })
     })
@@ -155,7 +155,7 @@ Portfolio.forEach( function (Portfolio){
 Blog.forEach ( function (Blog) {
     Blog.addEventListener("click", function () {
         scroll({
-            top: 3697,
+            top: 4000,
             behavior: 'smooth'
         })
     })
@@ -164,11 +164,13 @@ Blog.forEach ( function (Blog) {
 Contact.forEach( function (Contact){
     Contact.addEventListener("click", function () {
         scroll ({
-            top: 5430,
+            top: 5730,
             behavior: 'smooth'
         })
     })
 });
+
+
 
 //fixed header
 
@@ -177,6 +179,7 @@ let fixed = header.offsetTop;
 let Burger = document.querySelector('.burger_menu_block')
 let Burger_PopUp = document.querySelector('.Burger_pop_up')
 let BurgerMenu = document.querySelector(".burger_menu")
+
 
 window.addEventListener("scroll", function () {
     if (window["pageYOffset"] > 99) {
