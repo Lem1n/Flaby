@@ -755,6 +755,7 @@ body {
     margin: 5px 5px;
     fill: rgb(123,2,5);
     transition: .1s;
+    cursor: pointer;
 }
 .facebook_icon:hover {
     width: 35px;
