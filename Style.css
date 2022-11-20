@@ -13,7 +13,7 @@ body {
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin: 100px 0 80px;
+    padding: 50px 0 80px;
 }
 .R_title {
     font-family: 'Roboto Slab', serif;
@@ -328,8 +328,6 @@ body {
 .Custom_Features_subtitle {
     font-weight: 700;
     font-size: 40px;
-    padding: 20px 0 30px;
-
 }
 .Custom_Features_text {
     font-size: 24px;
@@ -347,6 +345,11 @@ body {
     display: flex;
     align-items: center;
 }
+.Custom_Features_info ul {
+    padding: 0;
+    list-style: inside square url("img/Circle.png");
+}
+
 .Circle_icon {margin-right: 15px;}
 
 .Custom_Features_content{
@@ -354,7 +357,10 @@ body {
     height: 50%;
     width: 720px;
 }
-.Custom_Features_h1{font-size: 20px;}
+.Custom_Features_h1{
+    font-size: 20px;
+    margin: 10px 0;
+}
 .Custom_Features_btn {
     margin: 30px;
     text-transform: uppercase;
@@ -390,6 +396,9 @@ body {
 /**/
 /**/
 /**/
+.Other_Services {
+    margin-bottom: 80px;
+}
 .Other_Services_container {
     display: flex;
     flex-direction: column;
@@ -755,7 +764,6 @@ body {
     margin: 5px 5px;
     fill: rgb(123,2,5);
     transition: .1s;
-    cursor: pointer;
 }
 .facebook_icon:hover {
     width: 35px;
@@ -803,7 +811,7 @@ body {
 }
 .footer_grey_text:hover {
     transition: .3s;
-    font-size: 16px;
+    font-size: 1.1rem;
     color: black;
 }
 
@@ -919,8 +927,8 @@ body {
 
 .accordion{
     background-color: #fffafa;
-    padding: 60px 0;
     color: dimgrey;
+    padding-bottom: 60px;
 }
 .accordion_block{
     display: flex;
